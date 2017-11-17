@@ -34,20 +34,21 @@
             // agentList1
             // 
             this.agentList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.agentList1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agentList1.Location = new System.Drawing.Point(0, 0);
             this.agentList1.Margin = new System.Windows.Forms.Padding(6);
             this.agentList1.Name = "agentList1";
-            this.agentList1.Size = new System.Drawing.Size(1530, 752);
+            this.agentList1.Size = new System.Drawing.Size(1830, 908);
             this.agentList1.TabIndex = 0;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 44F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1530, 752);
+            this.ClientSize = new System.Drawing.Size(1830, 908);
             this.Controls.Add(this.agentList1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmMain";
             this.Text = "AGENT";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -92,11 +92,35 @@ namespace AGENT_NEW
             dataGridViewSBO.Columns["PartnerName"].ReadOnly = true;
 
             dataGridViewSBO.Columns["key"].Width = Width_dataGridView * 10 / 100;
-            dataGridViewSBO.Columns["username"].Width = Width_dataGridView * 20 / 100;
+            dataGridViewSBO.Columns["username"].Width = Width_dataGridView * 10 / 100;
             dataGridViewSBO.Columns["usd"].Width = Width_dataGridView * 5 / 100;
             dataGridViewSBO.Columns["com"].Width = Width_dataGridView * 5 / 100;
-            dataGridViewSBO.Columns["message"].Width = Width_dataGridView * 50 / 100;
+            dataGridViewSBO.Columns["message"].Width = Width_dataGridView * 40 / 100;
             dataGridViewSBO.Columns["PartnerName"].Width = Width_dataGridView * 10 / 100;
+
+            DataGridViewButtonColumn colButtonLogin = new DataGridViewButtonColumn();
+            colButtonLogin.HeaderText = "LOGIN";
+            colButtonLogin.Name = "login";
+            colButtonLogin.Text = "Log";
+            colButtonLogin.Width = Width_dataGridView * 5 / 100;
+            colButtonLogin.UseColumnTextForButtonValue = true;
+            dataGridViewSBO.Columns.Add(colButtonLogin);
+
+            DataGridViewButtonColumn colButtonLoginWeb = new DataGridViewButtonColumn();
+            colButtonLoginWeb.HeaderText = "LWEB";
+            colButtonLoginWeb.Name = "lweb";
+            colButtonLoginWeb.Text = "LWeb";
+            colButtonLoginWeb.Width = Width_dataGridView * 5 / 100;
+            colButtonLoginWeb.UseColumnTextForButtonValue = true;
+            dataGridViewSBO.Columns.Add(colButtonLoginWeb);
+
+            DataGridViewButtonColumn colButtonNew = new DataGridViewButtonColumn();
+            colButtonNew.HeaderText = "NEW";
+            colButtonNew.Name = "new";
+            colButtonNew.Text = "New";
+            colButtonNew.Width = Width_dataGridView * 5 / 100;
+            colButtonNew.UseColumnTextForButtonValue = true;
+            dataGridViewSBO.Columns.Add(colButtonNew);
 
             foreach (DataGridViewColumn col in dataGridViewSBO.Columns)
             {
@@ -104,6 +128,8 @@ namespace AGENT_NEW
                 col.HeaderCell.Style.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
                 col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
+
+
         }
         private void createTableIBET(DataTable dt, bool status = false, string FilterGroup = "")
         {
@@ -147,11 +173,35 @@ namespace AGENT_NEW
             dataGridViewSBO.Columns["PartnerName"].ReadOnly = true;
 
             dataGridViewIBET.Columns["key"].Width = Width_dataGridView * 10 / 100;
-            dataGridViewIBET.Columns["username"].Width = Width_dataGridView * 20 / 100;
+            dataGridViewIBET.Columns["username"].Width = Width_dataGridView * 10 / 100;
             dataGridViewIBET.Columns["usd"].Width = Width_dataGridView * 5 / 100;
             dataGridViewIBET.Columns["com"].Width = Width_dataGridView * 5 / 100;
-            dataGridViewIBET.Columns["message"].Width = Width_dataGridView * 50 / 100;
+            dataGridViewIBET.Columns["message"].Width = Width_dataGridView * 40 / 100;
             dataGridViewIBET.Columns["PartnerName"].Width = Width_dataGridView * 10 / 100;
+
+            DataGridViewButtonColumn colButtonLogin = new DataGridViewButtonColumn();
+            colButtonLogin.HeaderText = "LOGIN";
+            colButtonLogin.Name = "login";
+            colButtonLogin.Text = "Log";
+            colButtonLogin.Width = Width_dataGridView * 5 / 100;
+            colButtonLogin.UseColumnTextForButtonValue = true;
+            dataGridViewIBET.Columns.Add(colButtonLogin);
+
+            DataGridViewButtonColumn colButtonLoginWeb = new DataGridViewButtonColumn();
+            colButtonLoginWeb.HeaderText = "LWEB";
+            colButtonLoginWeb.Name = "lweb";
+            colButtonLoginWeb.Text = "LWeb";
+            colButtonLoginWeb.Width = Width_dataGridView * 5 / 100;
+            colButtonLoginWeb.UseColumnTextForButtonValue = true;
+            dataGridViewIBET.Columns.Add(colButtonLoginWeb);
+
+            DataGridViewButtonColumn colButtonNew = new DataGridViewButtonColumn();
+            colButtonNew.HeaderText = "NEW";
+            colButtonNew.Name = "new";
+            colButtonNew.Text = "New";
+            colButtonNew.Width = Width_dataGridView * 5 / 100;
+            colButtonNew.UseColumnTextForButtonValue = true;
+            dataGridViewIBET.Columns.Add(colButtonNew);
 
             foreach (DataGridViewColumn col in dataGridViewIBET.Columns)
             {
